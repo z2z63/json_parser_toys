@@ -1,4 +1,3 @@
-use std::ops::Index;
 use super::Result;
 
 #[derive(Debug)]

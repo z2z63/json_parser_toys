@@ -48,8 +48,6 @@ fn main() {
     "success": true
 }"#;
     use json::{TableDrivenParser, DefiniteParser, IndefiniteParser, Lexer};
-    let json_str=  std::fs::read_to_string("/home/arch/anaconda3/pkgs/cache/47929eba.json").unwrap();
-    let json_str = json_str.as_str();
     let mut parser = TableDrivenParser::new(Lexer::new(json_str));
     match parser.parse() {
         Ok(value) => {
